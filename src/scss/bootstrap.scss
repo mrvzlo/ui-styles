@@ -1,0 +1,92 @@
+.style-0 {
+   --bg: #eee;
+
+   * {
+      transition: all 0.15s ease-in-out;
+   }
+
+   .menu {
+      gap: 12px;
+      padding-block: 1rem;
+   }
+
+   .primary {
+      --bg: #0d6efd;
+      --hover: #0b5ed7;
+      --light: #cfe2ff;
+      --dark: #052c65;
+      --color: #fff;
+   }
+   .secondary {
+      --bg: rgb(176, 42, 55);
+      --hover: #bb2d3b;
+      --light: #f1aeb5;
+      --dark: #58151c;
+      --color: #fff;
+   }
+   .tertiary {
+      --bg: #198754;
+      --hover: #157347;
+      --light: #a3cfbb;
+      --dark: #0a3622;
+      --color: #fff;
+   }
+
+   .button {
+      padding: 6px 12px;
+      line-height: 1.5;
+      border-radius: 6px;
+   }
+
+   .badge {
+      padding: 4.2px 7.8px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      border-radius: 50rem;
+   }
+
+   .group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.5rem;
+   }
+
+   .alert {
+      padding: 1rem;
+      border-radius: 6px;
+      width: 100%;
+   }
+
+   .card {
+      width: 200px;
+
+      .head {
+         padding: 0.5rem 1rem;
+         border-top-left-radius: 6px;
+         border-top-right-radius: 6px;
+         border: solid 1px var(--bg);
+         background: var(--bg);
+         color: var(--color);
+      }
+
+      .body {
+         padding: 1rem;
+         border: solid 1px rgba(0, 0, 0, 0.175);
+         border-top: none;
+         border-bottom-left-radius: 6px;
+         border-bottom-right-radius: 6px;
+      }
+   }
+
+   .content {
+      max-width: 1320px;
+      width: 100%;
+      margin: auto;
+   }
+
+   .link {
+      color: var(--bg);
+      text-decoration: underline;
+   }
+}

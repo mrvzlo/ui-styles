@@ -1,0 +1,105 @@
+.style-1 {
+   .primary {
+      --bg: #000;
+      --hover: #ff90e8;
+      --light: #fff;
+      --dark: #000;
+      --color: #fff;
+   }
+   .secondary {
+      --bg: #ff90e8;
+      --hover: #ff90e8;
+      --light: #000;
+      --dark: #000;
+      --color: #000;
+   }
+   .tertiary {
+      --bg: #ffc900;
+      --hover: #ffc900;
+      --light: #000;
+      --dark: #000;
+      --color: #000;
+   }
+
+   .group {
+      display: flex;
+      > * {
+         flex-grow: 1;
+      }
+   }
+
+   .button {
+      border-width: 2px;
+      padding: 1.5rem 3vw;
+
+      &.primary:hover {
+         color: #000;
+      }
+      &.secondary,
+      &.tertiary {
+         border-color: #000;
+      }
+   }
+
+   .group .button {
+      margin: 10px;
+   }
+
+   .alert,
+   .button,
+   .badge {
+      font-weight: 900;
+   }
+
+   .alert {
+      font-size: 3rem;
+   }
+
+   .link,
+   .badge {
+      flex-grow: 0;
+      margin: 10px;
+   }
+
+   .badge {
+      padding: 0 5px;
+   }
+
+   .alert {
+      color: var(--bg);
+      border-color: var(--dark);
+   }
+
+   .link {
+      padding: 3px;
+   }
+
+   .link:hover {
+      outline: solid 1px var(--bg);
+   }
+
+   .card {
+      margin-block: 10px;
+      padding: 0 10px;
+      border-left: solid 2px black;
+      border-right: solid 2px black;
+      text-align: center;
+
+      .head {
+         padding: 20px;
+         font-weight: bold;
+         border-top: solid 2px black;
+         border-bottom: solid 2px black;
+      }
+      .body {
+         font-size: 2rem;
+         padding: 40px;
+         border-bottom: solid 2px black;
+      }
+   }
+
+   .card:nth-child(2) {
+      border-left: none;
+      border-right: none;
+   }
+}
